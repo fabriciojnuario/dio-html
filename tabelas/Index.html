@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+       table{
+        -webkit-box-shadow: 13px 10px 28px 1px rgba(0,0,0,0.55);
+        -moz-box-shadow: 13px 10px 28px 1px rgba(0,0,0,0.55);
+        box-shadow: 13px 10px 28px 1px rgba(0,0,0,0.55);
+       }
+       table thead th{
+        background-color: black;
+        color: aliceblue;
+       }
+       table tfoot td{
+        background-color: lightgrey;
+       }
+       table tbody tr:nth-child(even) td{
+        background-color: lightcyan;
+       }
+       table tbody tr:hover td{
+        background-color: lightblue;
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <table summary="tabela sobre minha familia." border="0" width="250" align="center" cellspacing="0" cellpadding="5">
+        <caption>Tabela sobre minha família.</caption>
+        <thead>
+            <tr id="1">
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="2">
+                <td>Fabricio</td>
+                <td>43</td>
+            </tr>
+            <tr id="3">
+                <td>Sonia</td>
+                <td>69</td>
+            </tr>
+            <tr id="4">
+                <td>Ana Claudia</td>
+                <td>29</td>
+            </tr>
+            <tr id="5">
+                <td>Alessandra</td>
+                <td>51</td>
+            </tr>
+            <tr id="6">
+                <td>Euripedes</td>
+                <td>70 in memorian</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
