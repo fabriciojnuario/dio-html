@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos</title>
+    <style>
+        kbd{
+            border: solid 1px black;
+        }
+        code{
+            background-color: beige;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <select name="browsers" id="">
+        <option value="">Choose your browser:</option>
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Mozila Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+        <option value="safari">Safari</option>
+        <option value="opera">Opera</option>
+    </select>
+    <br><br>
+    <hr><br>
+    <input list="browser" type="search" name="search" >
+    <datalist id="browser">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Mozila Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+        <option value="safari">Safari</option>
+        <option value="opera">Opera</option>
+    </datalist>
+    <br><hr>
+    <p>
+        Para copiar esse informação, pressione <kbd>CTRL</kbd> + <kbd>C</kbd>
+    </p>
+    <p>
+        Parar definir o fundo de tela use o comando <code>background-color</code>
+    </p>
+    <p>
+        Comando completo para alterar a cor de fundo:
+        <pre>
+            <code>
+                code{
+                    background-color: beige;
+                    color: red;
+                }
+            </code>
+        </pre>
+    </p>
+    <details>
+        <summary>Erroneamente atribuído a Mario Quintana</summary>
+        <p>
+            Um dia descobrimos que beijar uma pessoa para esquecer outra é bobagem.
+        Você não só não esquece a outra pessoa como pensa muito mais nela...
+        Um dia nós percebemos que as mulheres têm instinto "caçador" e fazem qualquer homem sofrer...
+        Um dia descobrimos que se apaixonar é inevitável...
+        Um dia percebemos que as melhores provas de amor são as mais simples...
+        Um dia percebemos que o comum não nos atrai...
+        Um dia saberemos que ser classificado como "bonzinho" não é bom...
+        Um dia perceberemos que a pessoa que nunca te liga é a que mais pensa em você...
+        Um dia percebemos que somos muito importante para alguém, mas não damos valor a isso...
+        Um dia percebemos como aquele amigo faz falta, mas ai já é tarde demais...
+        Enfim...
+        Um dia descobrimos que apesar de viver quase um século esse tempo todo não é suficiente para realizarmos todos os nossos sonhos, para beijarmos todas as bocas que nos atraem, para dizer o que tem de ser dito...
+        O jeito é: ou nos conformamos com a falta de algumas coisas na nossa vida ou lutamos para realizar todas as nossas loucuras...
+        </p>
+    </details>
+    <br><hr>
+    <meter max="100", min="0" value="25">
+
+    </meter>
+    <progress id="progress"max="100" min="0" value="0"></progress>
+    <script>
+        var progress = document.getElementById("progress");
+        const interval = setInterval(() => {
+            progress.value += 10;
+            if(progress.value >= 100){
+                alert('Load sucessfully!');
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
